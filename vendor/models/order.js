@@ -4,7 +4,7 @@ const faker = require('faker');
 
 class Order {
   constructor() {
-    this.storeName = process.env.VENDOR_NAME;
+    this.storeName = 'vendor1';
     this.orderId = faker.random.uuid();
     this.customerName = faker.name.findName();
     this.address = faker.address.country();
